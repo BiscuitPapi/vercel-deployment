@@ -5,6 +5,10 @@ app.get("/", (req, res) => {
   res.send("Server is running");
 });
 
+app.get("/api", (req, res) => {
+  res.send("Server is yes");
+});
+
 app.get("/api/sorting", async (req, res) => {
   try {
     const fileContent = req.query;
